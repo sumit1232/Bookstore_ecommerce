@@ -1,0 +1,135 @@
+/* Bookstore palette:
+   - Deep Brown: #3e1000
+   - Rich Gold: #ceb035
+   - Cream: #f8f5f2
+   - Forest Green: #18336d (deep blue-green, can also use #346751)
+   - Accent Red: #ae1818
+*/
+
+/* Cart badge */
+.cart-items {
+    border-radius: 50%;
+    background-color: #ceb035;      /* Gold badge for cart */
+    font-weight: 700;
+    color: #3e1000;                /* Deep brown text */
+    width: 36px;
+    height: 36px;
+    font-size: 22px;
+    padding: 8px;
+    position: relative;
+    left: 30px;
+    box-shadow: 0 2px 8px #dfc88e66;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    background: linear-gradient(90deg, #3e1000 80%, #ceb035 120%);
+    border-bottom: 2px solid #ceb035;
+    color: #f8f5f2;
+    font-family: 'Merriweather', serif;
+}
+
+/* Product card */
+.product-card {
+    border: 1px solid #ceb035;        /* Gold border */
+    border-radius: 10px;
+    width: fit-content;
+    padding: 18px;
+    margin: 18px;
+    box-shadow: 0 4px 14px rgba(62, 16, 0, 0.10);
+    background-color: #f8f5f2;        /* Cream background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 0.2s;
+}
+.product-card:hover {
+    box-shadow: 0 4px 18px #ceb03577;
+}
+.product-image {
+    width: 176px;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    border: 2px solid #3e1000;
+    background: #fff9e7;
+    transition: transform 0.3s, border-color 0.2s;
+}
+.product-image:hover {
+    transform: scale(1.05);
+    border-color: #ae1818;            /* Red accent on hover */
+}
+.product-details {
+    text-align: center;
+    font-family: 'Georgia', serif;
+    color: #3e1000;
+}
+.item-card {
+    display: flex;
+    flex-wrap: wrap;
+}
+h2 {
+    text-align: center;
+    color: #346751;
+    font-family: 'Merriweather', serif;
+}
+.filter-btn {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    gap: 10px;
+    justify-content: center;
+}
+.filter-btn button {
+    background: #346751;             /* Forest green */
+    color: #f8f5f2;
+    border: none;
+    padding: 7px 18px;
+    border-radius: 9px;
+    font-weight: bold;
+    transition: background 0.15s;
+}
+.filter-btn button:hover {
+    background: #ceb035; 
+    color: #3e1000;
+}
+.prdt-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #f8f5f2;
+}
+.cart-num {
+    margin-bottom: 26px;
+    cursor: pointer;
+}
+.buy-now-btn {
+    background-color: #ae1818;               /* Accent red */
+    color: #f8f5f2;
+    padding: 7px 18px;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    position: fixed;
+    top: 35%;
+    right: 16px;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    box-shadow: 0 2px 12px #ae181844;
+}
+.buy-now-btn:hover {
+    background-color: #ceb035;               /* Switch to gold */
+    color: #3e1000;
+}
+.gfg {
+    background-color: #346751;               /* Forest green */
+    color: #f8f5f2;
+    padding: 5px 12px;
+    border-radius: 8px;
+    font-weight: bold;
+}
